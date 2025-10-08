@@ -19,6 +19,10 @@
 				width: 100%;
 			}
 
+			.contact-details {
+					display: flex;
+				}
+
 			.left {
 				margin: 0 _size(section-spacing, large) 0 0;
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
@@ -98,6 +102,10 @@
 				@include padding(3em, 3em);
 				display: block;
 				width: 100%;
+
+				.contact-details {
+					flex-direction: column-reverse;
+				}
 
 				.left {
 					width: 100%;

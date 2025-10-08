@@ -113,7 +113,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 /* Type */
 body, input, select, textarea {
   color: #ffffff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
   font-size: 16.5pt;
   font-weight: 300;
   line-height: 1.65;
@@ -1808,7 +1808,7 @@ input[type=radio] + label {
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 300;
@@ -2572,10 +2572,6 @@ button:disabled,
   visibility: hidden;
 }
 @media screen and (max-width: 736px) {
-  #header {
-    height: 2.75em;
-    line-height: 2.75em;
-  }
   #header nav {
     top: 0;
     right: 0;
@@ -2596,6 +2592,19 @@ button:disabled,
   }
 }
 @media screen and (max-width: 480px) {
+  #header {
+    height: 5.75em;
+    line-height: 2em;
+    padding: 1em;
+  }
+  #header h1 {
+    font-size: 1.4em;
+    max-width: 70%;
+  }
+  #header nav {
+    top: 0.7em;
+    font-size: 3em;
+  }
   #header nav a[href="#menu"] {
     width: 4em;
     white-space: nowrap;
@@ -2610,7 +2619,7 @@ button:disabled,
     text-indent: 0;
     text-align: right;
     margin-left: 0;
-    padding-right: 1.25em;
+    padding-right: 0.7em;
   }
 }
 
@@ -2724,6 +2733,8 @@ button:disabled,
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
   }
   #menu .inner .close {
     background-size: 1.5em 1.5em;
@@ -2747,6 +2758,12 @@ body.is-menu-visible #menu .inner {
   -ms-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
+}
+
+#wrapper,
+#services,
+#footer {
+  scroll-margin-top: 5.75em;
 }
 
 /* Banner */
@@ -2779,6 +2796,7 @@ body.is-menu-visible #menu .inner {
 #banner .logo img {
   width: 4em;
   filter: brightness(0) invert(1);
+  margin-top: 4px;
 }
 #banner h2 {
   -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
@@ -2828,6 +2846,10 @@ body.is-menu-visible #menu .inner {
   line-height: 2;
   text-transform: uppercase;
 }
+#banner .cta {
+  display: flex;
+  gap: 10px;
+}
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0;
@@ -2863,6 +2885,15 @@ body.is-menu-visible #menu .inner {
   }
   #banner p {
     font-size: 0.8em;
+  }
+  #banner .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #banner .cta a {
+    width: auto;
+    height: auto;
+    padding: 0.4em 1.2em;
   }
 }
 body.is-preload #banner .logo {
@@ -3333,6 +3364,9 @@ body.is-preload #banner p {
 #footer .inner > * {
   width: 100%;
 }
+#footer .inner .contact-details {
+  display: flex;
+}
 #footer .inner .left {
   margin: 0 3em 0 0;
   width: calc(50% - 1.5em);
@@ -3394,6 +3428,9 @@ body.is-preload #banner p {
     padding: 3em 3em 1em 3em;
     display: block;
     width: 100%;
+  }
+  #footer .inner .contact-details {
+    flex-direction: column-reverse;
   }
   #footer .inner .left {
     width: 100%;
