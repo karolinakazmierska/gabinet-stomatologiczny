@@ -1,0 +1,17 @@
+{
+	"name": "html5up-solid-state",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build-css": "sass assets/sass/main.scss assets/css/main.css",
+		"watch-css": "sass --watch assets/sass/main.scss assets/css/main.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"sass": "^1.93.2"
+	}
+}
