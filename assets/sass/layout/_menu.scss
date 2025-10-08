@@ -114,7 +114,17 @@
 			width: 100%;
 
 			.close {
-				background-size: 1.5em 1.5em;
+				background-size: 5em 5em;
+			}
+		}
+
+		.links {
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			li a {
+				font-size: 2em;
 			}
 		}
 	}
