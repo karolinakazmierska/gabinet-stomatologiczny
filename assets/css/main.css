@@ -3358,6 +3358,64 @@ body.is-preload #banner p {
   width: 100%;
 }
 
+.opinions-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.opinions-container .opinion {
+  width: calc(50% - 1.5em);
+  text-align: left;
+  border-radius: 5px;
+  background-color: #7656b5;
+  padding: 1.75em;
+}
+.opinions-container .opinion > p {
+  display: inline;
+  margin-bottom: 0;
+}
+.opinions-container .opinion button {
+  display: inline;
+}
+.opinions-container .opinion p.name {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media screen and (max-width: 980px) {
+  .opinion {
+    margin: 1em 2em 1em 0;
+    width: calc(50% - 1em);
+  }
+}
+@media screen and (max-width: 736px) {
+  .opinion {
+    margin: 0.875em 1.75em 0.875em 0;
+    width: calc(50% - 0.875em - 1px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .opinion {
+    width: 100%;
+    margin: 0 0 2em 0 !important;
+  }
+}
+.opinion__toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  text-transform: none;
+  height: auto;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 /* Footer */
 #footer .inner {
   padding: 5em 0 3em 0;
