@@ -3316,7 +3316,6 @@ body.is-preload #banner p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 3em 0;
-  width: 100%;
 }
 .team::before {
   display: none;
@@ -3350,6 +3349,13 @@ body.is-preload #banner p {
 .team .person p {
   text-align: center;
   font-size: 1em;
+}
+
+#team-2 .inner {
+  padding-top: 60px;
+}
+#team-2 .inner .major {
+  width: 100%;
 }
 
 /* Footer */

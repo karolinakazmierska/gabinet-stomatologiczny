@@ -358,8 +358,8 @@
 		gap: 2em;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 3em 0;
-		width: 100%;
+		padding: 3em 0; 
+		// width: 100%;
 	}
 
 	&::before {
@@ -400,5 +400,13 @@
 			text-align: center;
 			font-size: 1em;
 		}
+	}
+}
+
+#team-2 .inner {
+	padding-top: 60px;
+
+	.major {
+		width: 100%;	
 	}
 }
