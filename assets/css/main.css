@@ -3314,7 +3314,7 @@ body.is-preload #banner p {
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 3em 0;
 }
 .team::before {
@@ -3324,11 +3324,11 @@ body.is-preload #banner p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 12em;
+  max-width: 9em;
 }
 .team .person .image {
   border-radius: 100%;
-  width: 10em;
+  width: 9em;
   overflow: hidden;
   -ms-flex: 1;
   aspect-ratio: 1/1;
@@ -3351,6 +3351,19 @@ body.is-preload #banner p {
   font-size: 1em;
 }
 
+@media screen and (max-width: 980px) {
+  .team {
+    padding: 3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team .person {
+    max-width: 100%;
+  }
+  .team .person .image {
+    width: 12em;
+  }
+}
 #team-2 .inner {
   padding-top: 60px;
 }
@@ -3360,7 +3373,6 @@ body.is-preload #banner p {
 
 .opinions-container {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -3370,6 +3382,7 @@ body.is-preload #banner p {
   border-radius: 5px;
   background-color: #7656b5;
   padding: 1.75em;
+  margin-bottom: 2em;
 }
 .opinions-container .opinion > p {
   display: inline;
@@ -3386,21 +3399,13 @@ body.is-preload #banner p {
 }
 
 @media screen and (max-width: 980px) {
-  .opinion {
-    margin: 1em 2em 1em 0;
-    width: calc(50% - 1em);
+  .opinions-container .opinion {
+    width: calc(50% - 1.5em);
   }
 }
 @media screen and (max-width: 736px) {
-  .opinion {
-    margin: 0.875em 1.75em 0.875em 0;
-    width: calc(50% - 0.875em - 1px);
-  }
-}
-@media screen and (max-width: 480px) {
-  .opinion {
+  .opinions-container .opinion {
     width: 100%;
-    margin: 0 0 2em 0 !important;
   }
 }
 .opinion__toggle {
