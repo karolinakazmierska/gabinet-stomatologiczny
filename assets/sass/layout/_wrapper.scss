@@ -169,7 +169,8 @@
 		}
 	}
 
-	.inner {
+	.inner,
+	.team-header {
 		@include padding(3em, 0);
 		margin: 0 auto;
 		width: _size(inner);
@@ -258,7 +259,8 @@
 			left: 0;
 		}
 
-		.inner {
+		.inner,
+		.team-header {
 			@include padding(3em, 3em);
 			width: 100%;
 		}
@@ -296,7 +298,8 @@
 			left: 0;
 		}
 
-		.inner {
+		.inner,
+		.team-header {
 			@include padding(2em, 2em);
 		}
 
@@ -335,7 +338,8 @@
 	}
 
 	@include breakpoint("<=xxsmall") {
-		.inner {
+		.inner,
+		.team-header {
 			@include padding(2em, 1.5em);
 		}
 	}
@@ -345,6 +349,18 @@
 	margin-bottom: 0;
 	&::after {
 		display: none;
+	}
+}
+
+.image.top {
+	align-self: flex-start;
+}
+
+// TEAM SECTION
+
+.team-header {
+	h2 {
+		text-align: right;
 	}
 }
 
@@ -389,6 +405,7 @@
 				display: block;
 			}
 		}
+
 		h2 {
 			font-size: 1em;
 			text-align: center;

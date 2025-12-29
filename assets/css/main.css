@@ -3043,7 +3043,8 @@ body.is-preload #banner p {
   -ms-transform: scaleY(-1) scaleX(-1);
   transform: scaleY(-1) scaleX(-1);
 }
-.wrapper .inner {
+.wrapper .inner,
+.wrapper .team-header {
   padding: 3em 0 1em 0;
   margin: 0 auto;
   width: 55em;
@@ -3237,7 +3238,8 @@ body.is-preload #banner p {
     bottom: -4.75em;
     left: 0;
   }
-  .wrapper .inner {
+  .wrapper .inner,
+  .wrapper .team-header {
     padding: 3em 3em 1em 3em;
     width: 100%;
   }
@@ -3264,7 +3266,8 @@ body.is-preload #banner p {
     bottom: -2.5em;
     left: 0;
   }
-  .wrapper .inner {
+  .wrapper .inner,
+  .wrapper .team-header {
     padding: 2em 2em 0.1em 2em;
   }
   .wrapper.spotlight .inner {
@@ -3293,7 +3296,8 @@ body.is-preload #banner p {
   }
 }
 @media screen and (max-width: 360px) {
-  .wrapper .inner {
+  .wrapper .inner,
+  .wrapper .team-header {
     padding: 2em 1.5em 0.1em 1.5em;
   }
 }
@@ -3303,6 +3307,14 @@ body.is-preload #banner p {
 }
 #four::after {
   display: none;
+}
+
+.image.top {
+  align-self: flex-start;
+}
+
+.team-header h2 {
+  text-align: right;
 }
 
 .team {
